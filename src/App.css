@@ -1,38 +1,242 @@
-.App {
-  text-align: center;
+/* Global */
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	position: relative;
+	display: flex;
+   	flex-direction: column;
+	min-height: 100vh;
+	position: relative;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+
+}
+
+/* Container for pages */
+.section_container {
+	width: 100%;
+	margin-right: auto;
+	margin-top:10px;
+	max-width: 1200px;
+}
+
+.col-main {
+	width: 65%;
+}  
+
+  
+.col-complementary {
+	flex: 1;  
+}
+  
+  
+.section_intro {
+	font-size: 1.1875rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #fd3939 !important;
+}
+
+.image-cover {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-top: 65px;
+	margin-left: 45px;
+	object-position: center right;
+	border: 1px solid rgb(85, 85, 85);
+}
+
+.filter-contrast {
+  filter: contrast( 135% );
+  -webkit-filter: contrast( 135% );
+}
+
+.section_container p {
+	font-size: 1.1875rem;
+}
+  
+.col {
+	margin: 0 2px 2px 0;
+}
+
+/* Hero specifics */
+.hero {
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem 0 4rem;
+}
+.fade-in {
+	transform: translate3d(0,0,0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+	animation: fadeInUp .5s ease;
+}
+
+.hero_inner {
+	display: flex;
+	flex-direction: column;
+}
+
+.hero_tagline {
+	line-height: 1;
+	margin-bottom: -0.1px;
+}
+
+.hero_intro {
+	order: -1;
+	font-size: 1.1875rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: -5px;
+}
+.hero_intro a {
+	color: #fd3939 !important;
+}
+
+.hero_content {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Contact page */
+.form {
+	max-width: 600px;
+  }
+  
+  .form-group {
+	margin-bottom: 1rem;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+	display: block;
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+	border-color: #80bdff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  textarea {
+	height: 8rem;
+	resize: vertical;
+  }
+  
+  .btn {
+	display: inline-block;
+	font-weight: 400;
+	padding:10px 50px
+  }  
+
+/* Media queries */
+@media (min-width: 940px){
+	.hero {
+    	min-height: 500px;
+	}
+}
+
+@media (min-width: 670px){
+	.hero_tagline {
+		font-size: 3.875rem;
+	}
+	.hero_content {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 1250px){
+	.hero_inner {
+		margin: 0 25px;
+	}
+}
+
+@media (max-width: 650px){
+	.hero_inner {
+		margin: 0 25px;
+	}
+	.image-cover  {
+		margin-top: -5px;
+    margin-left: -10px;
+	}
+	.col-complementary {
+		margin:0 50px;
+
+	}
+}
+
+@media (max-width: 1200px){
+	.form {
+		margin: 0 20px;
+	}
+  .section_container  {
+    margin-left: 120px;
+    margin-right: auto;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (min-width: 640px){
+	.layout {
+	  display: flex;
+	}
 }
+  
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
