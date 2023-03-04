@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # React Portfolio
 ## Description
-![react-portfolio](https://raw.githubusercontent.com/frankmng/React-Portfolio/main/src/assets/images/portfolio_readme.png)
+![react-portfolio](https://raw.githubusercontent.com/frankmng/reactprofolio/main/src/assets/images/portfolio_readme.png)
 
 
 This developer portfolio was built using ReactJS + Vite. It's main function is to serve as a showcase of my developer bio and display my projects to an audience. In it, you can view my past projects and message me with any additional information.
