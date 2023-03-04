@@ -6,7 +6,7 @@
 
 This developer portfolio was built using ReactJS + Vite. It's main function is to serve as a showcase of my developer bio and display my projects to an audience. In it, you can view my past projects and message me with any additional information.
 
-Demo: 
+Demo: [React Portfolio](https://react-profolio-frank.herokuapp.com/)
 
 ## Table of Contents
 - [Installation](#installation)
