@@ -19,24 +19,32 @@ const Header = () => {
       </h1>
       <ul className="main-nav">
         <li>     
-          <a href="/" >
-            <span>01</span>Home
-          </a>
+          <NavLink 
+            to="/"
+            style={({ isActive }) => isActive ? activeLink : undefined }>
+              <span>01</span>Home 
+          </NavLink>
         </li>
         <li>     
-          <a href="/about" >
-            <span>02</span>About
-          </a>
+          <NavLink 
+            to="/about"
+            style={({ isActive }) => isActive ? activeLink : undefined }>
+              <span>02</span>About
+          </NavLink>
         </li>
         <li>     
-          <a href="/portfolio" >
-            <span>03</span>Portfolio
-          </a>
+          <NavLink 
+            to="/portfolio"
+            style={({ isActive }) => isActive ? activeLink : undefined }>
+              <span>03</span>Portfolio
+          </NavLink>
         </li>
-        <li>     
-          <a href="/contact" >
-            <span>04</span>Contact
-          </a>
+                  <li>     
+          <NavLink 
+            to="/contact"
+            style={({ isActive }) => isActive ? activeLink : undefined }>
+              <span>04</span>Contact
+          </NavLink>
         </li>
       </ul>
     </div>
